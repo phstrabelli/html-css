@@ -1,0 +1,175 @@
+@charset "UTF-8";
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: rgba(217, 230, 98, 0.496);
+}
+img{
+    width: 100%;
+}
+
+/* ==================cabecalho=========================== */
+#cabecalho
+{
+    background-image: linear-gradient(to bottom , rgb(107, 237, 107), rgb(6, 91, 6));
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+
+}
+#cabecalho > h1
+{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+#cabecalho > p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+nav > ul
+{
+  text-align: left;
+  display: flex;
+  padding: 10px;
+}
+.naveg
+{
+    text-decoration: none;
+    text-align: left;
+    color: rgb(251, 251, 251);
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+.naveg:hover
+{
+    background-color: rgba(119, 112, 112, 0.452);
+
+}
+
+/* ================main======================= */
+
+main
+{
+    text-align: justify;
+    min-width: 320px;
+    max-width: 800px;
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    font-family: android;
+    border-radius: 0px 0px 7px 7px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.512);
+}
+
+main > sector > h1
+{
+    color: rgba(29, 124, 5, 0.734);
+    font-size: 25px;
+    padding: 10px;
+    
+}
+
+main > sector > p
+{
+    text-align: justify;
+    text-indent: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+main > sector > h2
+{
+    background-image: linear-gradient(to right, rgba(67, 220, 93, 0.475), white);
+    font-size: 15px;
+    padding: 10px;
+}
+
+.link
+{
+    text-decoration: none;
+    color: rgba(14, 112, 14, 0.796);
+}
+.link:hover
+{
+    color: rgb(9, 155, 212);
+}
+#droid
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+}
+/* =================extra======================= */
+
+aside
+{
+    border-radius: 10px;
+    background-color: rgba(129, 250, 145, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cabecalho2
+{
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(31, 194, 90);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > p 
+{
+    padding: 10px;
+    text-indent: 20px;
+    font-size: 15px;
+}
+#extra
+{
+    height: 150px;
+    font-size: 15px;
+    padding: 10px;
+}
+#lista1
+{
+    list-style: none;
+    text-decoration: underline;
+    font-weight: bold;
+    columns: 2;
+}
+
+
+#final
+{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+#video
+{
+    background-color: rgba(11, 113, 11, 0.923);
+    padding: 20px;
+    margin: 0px -15px 30px -15px;
+    padding-bottom: 50%;
+    position: relative;
+}
+#video > iframe
+{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
