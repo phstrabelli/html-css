@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#container
+{
+    background-color: black;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    
+}
+#container2
+{
+    flex-flow: column wrap;
+    background-color: aliceblue;
+    width: 200px;
+    height: 400px;
+    align-self: flex-end;
+    display: flex;
+    
+
+}
+#item
+{
+    background-color: blueviolet;
+    width: 200px;
+    height: 400px;
+    flex: auto;
+}
+#item2
+{
+    background-color: brown;
+    width: 70px;
+    height: 100px;
+}
+#item3
+{
+    background-color: rgb(19, 4, 4);
+    width: 70px;
+    height: 100px;
+}
+#item4
+{
+    background-color: rgb(3, 5, 33);
+    width: 70px;
+    height: 100px;
+}
