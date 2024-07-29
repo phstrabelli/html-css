@@ -24,7 +24,7 @@
     width: 60px;
     position: relative;
 }
-#burguer > span
+#burguer > div> span
 {
     height: 4px;
     width: 40px;
@@ -37,24 +37,25 @@
     transition: .3s ease;
 
 }
-#burguer > span:nth-child(1)
+
+#burguer > div> span:nth-child(1)
 {
     top:25%;
 }
-#burguer > span:nth-child(3)
+#burguer > div> span:nth-child(3)
 {
     top:75%;
 }
-#burguer.active > span:nth-child(1)
+#burguer.active > div> span:nth-child(1)
 {
     top: 35px;
     transform: translate(-50%, -50%) rotate(45deg);
 }
-#burguer.active > span:nth-child(2)
+#burguer.active > div> span:nth-child(2)
 {
     opacity: 0;
 }
-#burguer.active > span:nth-child(3)
+#burguer.active > div> span:nth-child(3)
 {
     top:50%;
     transform: translate(-50%,50%) rotate(-45deg);
@@ -290,6 +291,7 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url(imagens/Group\ 1220.png);
 }
 #button-mulher
 {
@@ -327,6 +329,7 @@ justify-content: center;
     padding: 10px;
     margin: 15px;
     text-align: start;
+    border-bottom:4px solid#706EF4;;
 }
 .texto-mulher::before
 {
@@ -337,16 +340,6 @@ justify-content: center;
     left: 10px;
     
 }
-.texto-mulher::after
-{
-    content: "";
-    position: absolute;
-    background-color: #706EF4;
-    width: 290px;
-    height: 4px;
-    left: 10px;
-    transform: translate(0%,800%);
-}
 #video
 {
     display: flex;
@@ -354,7 +347,6 @@ justify-content: center;
     justify-content: center;
     align-content: center;
     height: 600px;
-    width: 100vw;
     text-align: center;
     margin: 10px;
 }
@@ -371,7 +363,7 @@ justify-content: center;
 {
     height: 165px;
     width: 291px;
-    margin: 40px;
+    margin-bottom: 40px;
 }
 #video>.vertodos
 {
@@ -390,7 +382,18 @@ justify-content: center;
         position: absolute;
         display: flex;
         justify-content: center;
+
     }
+    #burguer > div> span:nth-child(2)::after
+{
+    content: "MENU";
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: -9px;
+    left: 50px;
+}
     .cont-cell
     {
         display: flex;
@@ -409,10 +412,15 @@ justify-content: center;
         width: 118px;
         height: 52px;
     }
+    #burguer > div> span
+    {
+        left: 25%;
+    }
     #section1-phone
     {
-    background-image:url(imagens/Group\ 882.png);
+    background-image:url(imagens/hero-bg.png);
     background-repeat: no-repeat;
+    background-position: right bottom;
     background-size: cover;
     height: 800px;
     display: flex;
@@ -549,11 +557,11 @@ justify-content: center;
         align-items: center;
     }
     .row
-{
+    {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 #refri-texto
 {
     width: 500px;;
@@ -591,4 +599,313 @@ justify-content: center;
     background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
     background-size: contain;
 }
+#mulher
+{
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+    height: 1300px;
+}
+#mulher>.container>.row
+{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    height: 1300px;
+}
+#img-mulher
+{
+    height: 454px;
+    width: 454px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    padding-top: 30px;
+    background-image: url(imagens/Group\ 1220.png);
+}
+#titulo-mulher
+{
+    height: 70px;
+    width: 545px;
+}
+#titulo-mulher>h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+#titulo-mulher>p
+{
+    font-size: 18px;
+    color: #858585;
+}
+#button-mulher
+{
+    display: flex;
+    width: 298px;
+    height: 48px;
+    justify-content: space-between;
+}
+#atual
+{
+    background-color: #706ef4;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#anos
+{
+    color: #706ef4;
+    border: 2px solid #706ef4;
+    background-color: #ffffff;
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div-texto-mulher
+{
+    height: 50px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows:50px;
+    gap: 30px;
+}    
+#div-texto-mulher>div
+{
+    width: 200px;
+    height: 100px;
+}
+.texto-mulher
+{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: start;
+    border-bottom: 4px solid #706EF4;
+}
+.texto-mulher::before
+{
+    content: url(imagens/Group\ 1067.svg);
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+#video
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 600px;
+    width: 100vw;
+    text-align: center;
+    margin: 10px;
+}
+#video>.container>.row
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 500px;
+}
+#div-video
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box-video
+{
+    height: 165px;
+    width: 291px;
+}
+#video>.vertodos
+{
+    margin-top: 10px;
+}
+}
+@media screen and (min-width:993px)
+{
+    body{
+        background-color: red;
+    }
+    header
+    {
+        top: 20px;
+        left: 0px;
+        width: 100vw;
+        height: 70px;
+        color: transparent;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+
+    }
+    #burguer > div> span:nth-child(2)::after
+{
+    content: "MENU";
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: -9px;
+    left: 50px;
+}
+    .cont-cell
+    {
+        display: flex;
+        width: 100vw;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #col-burguer
+    {
+        width: 118px;
+    }
+    #burguer
+    {
+        background-color: #000000;
+        width: 118px;
+        height: 52px;
+    }
+    #burguer > div> span
+    {
+        left: 25%;
+    }
+    #section1-phone
+    {
+    background-image:url(imagens/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: flex-start;
+    justify-content: center;
+    }
+    .titulo
+    {
+        width: 584;
+        height: 120px;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+    #section1-phone>#sla>.titulo>h1
+    {
+        font-weight: bold;
+        color: white;
+        font-size: 60px;
+    }
+    #sla
+    {
+        height: 545px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+
+    }
+    .textbox
+    {
+        width: 290px;
+        height: 81px;
+        background-color: #000000;
+        border-radius: 3px;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin: 20px 20px 20px 0px;
+        
+    }
+    .textbox>p
+    {
+        transform: translate(10%,20%);
+        
+    }
+    .div-textbox
+    {
+        width: 600px;
+        height: 245px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #section1-phone>#sla>.ver-duvida>.vertodos
+    {
+        color: white;
+    }
+    .ver-duvida
+    {
+        width: 600px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .vertodos
+    {
+        font-weight: bold;
+        font-size: 20px;
+        width: 228px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .vertodos>div
+    {
+        background-color: black;
+        border-radius: 50%;
+        width: 46px;
+        height: 46px;
+        
+    }
+    .vertodos>p
+    {
+        transform: translate(5%,30%);
+        width: 180px;
+        
+    }
+    .boxduvidas
+    {
+    width: 290px;
+    height: 46px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    
+    }
+    .boxduvidas>p
+    {       
+        display: block;
+        transform: translate(-10%,30%);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .boxduvidas>div
+    {
+    width: 22px;
+    height: 22px;
+    background-color: white;
+    margin: 30px;
+    }
 }
