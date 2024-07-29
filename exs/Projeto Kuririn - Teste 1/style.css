@@ -64,8 +64,8 @@
 {
     background-color: rgba(86, 70, 70, 0.461);
     height: 80vh;
-    width: 80%;
-    max-width: 450px;
+    width:80%;
+   
     position: fixed;
     top: 25%;
     right: -900px;
@@ -86,7 +86,7 @@
     right: 0;
 }
 
-@media screen and (max-width:768px) 
+@media screen and (max-width:767px) 
 {
 header
 {
@@ -245,7 +245,7 @@ justify-content: center;
 }
 #refri-texto
 {
-    width: 290px;;
+    width: 300px;;
     height:170px ;
     display: flex;
     text-align: center;
@@ -334,11 +334,9 @@ justify-content: center;
 .texto-mulher::before
 {
     content: url(imagens/Group\ 1067.svg);
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 10px;
-    
+    margin-right: 10px;
+    margin-top: 5px;
+
 }
 #video
 {
@@ -358,19 +356,37 @@ justify-content: center;
     align-content: center;
     height: 500px;
 }
+#div-video
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-wrap: wrap;
+}
 
-.box-video
+#box-video-1
 {
     height: 165px;
     width: 291px;
     margin-bottom: 40px;
+    background-image: url(imagens/Rectangle\ 76.png);
+    background-size: cover;
+}
+#box-video-2
+{
+    height: 165px;
+    width: 291px;
+    margin-bottom: 40px;
+    background-image: url(imagens/Rectangle\ 74.png);
+    background-size: cover;
 }
 #video>.vertodos
 {
     margin-top: 10px;
 }
 }
-@media screen and (min-width:768px) and (max-width:992px)
+@media screen and (min-width:768px) and (max-width:991px)
 {
     header
     {
@@ -564,7 +580,7 @@ justify-content: center;
     }
 #refri-texto
 {
-    width: 500px;;
+    width: 630px;;
     height:170px ;
     display: flex;
     text-align: center;
@@ -626,17 +642,17 @@ justify-content: center;
     padding-top: 30px;
     background-image: url(imagens/Group\ 1220.png);
 }
-#titulo-mulher
+.titulo-mulher
 {
     height: 70px;
     width: 545px;
 }
-#titulo-mulher>h1
+.titulo-mulher>h1
 {
     font-size: 60px;
     font-weight: bold;
 }
-#titulo-mulher>p
+.titulo-mulher>p
 {
     font-size: 18px;
     color: #858585;
@@ -705,10 +721,9 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 600px;
+    height: 800px;
     width: 100vw;
     text-align: center;
-    margin: 10px;
 }
 #video>.container>.row
 {
@@ -716,29 +731,47 @@ justify-content: center;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-    height: 500px;
+    height: 700px;
 }
+#video>.container>.row>h1
+{
+    font-size: 60px;
+}
+
 #div-video
 {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    flex-wrap: wrap;
+    width: 900px;
 }
 
-.box-video
+#box-video-1
 {
-    height: 165px;
-    width: 291px;
+    height: 190px;
+    width: 335px;
+    margin-bottom: 40px;
+    background-image: url(imagens/Rectangle\ 76.png);
+    background-size: cover;
+}
+#box-video-2
+{
+    height: 190px;
+    width: 335px;
+    margin-bottom: 40px;
+    background-image: url(imagens/Rectangle\ 74.png);
+    background-size: cover;
 }
 #video>.vertodos
 {
     margin-top: 10px;
 }
 }
-@media screen and (min-width:993px)
+@media screen and (min-width:992px)
 {
-    body{
-        background-color: red;
-    }
+
     header
     {
         top: 20px;
@@ -908,4 +941,235 @@ justify-content: center;
     background-color: white;
     margin: 30px;
     }
+    #refri
+    {
+        
+        margin-bottom: 10px;
+        background-color: #F1F1F1;
+        height: 407px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #refri>.container>.row
+    {
+        height: 400px;
+    }
+    .row
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+#refri-texto
+{
+    width: 410px;;
+    height:250px ;
+    color: #000000;
+    font-size: 32px;
 }
+#refri-imagem
+{
+    width: 500px;;
+    height:105px ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#coca
+{
+    height: 110px;
+    width: 190px;
+    background-repeat: no-repeat;
+    background-image: url(imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.svg);
+    background-size: contain;
+
+}
+#pepsi
+{
+    height: 100px;
+    width: 240px;
+    background-repeat: no-repeat;
+    background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
+    background-size: contain;
+}
+#mulher
+{
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+    height: 750px;
+}
+#mulher>.container>.row
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 750px;
+}
+#img-mulher
+{
+    height: 324px;
+    width: 316px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    padding-top: 30px;
+    background-image: url(imagens/Group\ 1221.png);
+}
+.titulo-mulher
+{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-mulher>h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+.titulo-mulher>p
+{
+    font-size: 18px;
+    color: #858585;
+}
+#button-mulher
+{
+    display: flex;
+    width: 298px;
+    height: 48px;
+    justify-content: space-between;
+    top: 10px;
+}
+#atual
+{
+    background-color: #706ef4;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#anos
+{
+    color: #706ef4;
+    border: 2px solid #706ef4;
+    background-color: #ffffff;
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div-texto-mulher
+{
+    height: 50px;
+    width: 300px;
+}    
+#div-texto-mulher>div
+{
+    width: 300px;
+    height: 100px;
+}
+.texto-mulher
+{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: start;
+    border-bottom: 4px solid #706EF4;
+}
+.texto-mulher::before
+{
+    content: url(imagens/Group\ 1067.svg);
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+
+#mulher-geral
+{
+    height: 330px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+}
+#button-mulher-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#div-texto-mulher-2
+{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 370px;
+}
+#video
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 600px;
+    width: 100vw;
+    text-align: center;
+}
+#video>.container>.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    height: 500px;
+}
+#video>.container>.row>h1
+{
+    font-size: 60px;
+}
+
+#div-video
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+#box-video-1
+{
+    height: 255px;
+    width: 451px;
+    margin-bottom: 40px;
+    background-image: url(imagens/Rectangle\ 76.png);
+    background-size: cover;
+}
+#box-video-2
+{
+    height: 255px;
+    width: 451px;
+    margin-bottom: 40px;
+    background-image: url(imagens/Rectangle\ 74.png);
+    background-size: cover;
+}
+#video>.container>.row>.vertodos
+{
+    margin-top: 10px;
+    width: 270px;
+    padding: 0;
+}
+}
+
