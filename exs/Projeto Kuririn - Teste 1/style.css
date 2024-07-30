@@ -1,17 +1,167 @@
 @charset "UTF-8";
 *
 {
-    margin: 0;
+    margin: 0px;
     font-family: "Istok Web", sans-serif;
 }
 #lupa
 {
+    background-image: url(imagens/Group\ 1058.png);
     width: 58px;
     height: 58px;
-    background-color: #ffff;
     border-radius: 50%;
 
 }
+ul
+{
+    list-style-type: none;
+}
+ul>li>a
+{
+    text-decoration: none;
+    color: white;
+}
+.vertodos
+    {
+        
+        font-weight: bold;
+        font-size: 20px;
+        width: 228px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .vertodos>div
+    {
+        background-image: url(imagens/Group\ 1227.png);
+        background-color: black;
+        border-radius: 50%;
+        width: 46px;
+        height: 46px;
+        
+    }
+    .vertodos>p
+    {
+        transform: translate(5%,30%);
+        width: 180px;
+        
+    }
+    .boxduvidas
+    {
+    width: 290px;
+    height: 46px;
+    background-color: black;
+    color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    
+    }
+    .boxduvidas>p
+    {       
+        display: block;
+        transform: translate(-10%,30%);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .boxduvidas>div
+    {
+    width: 22px;
+    height: 22px;
+    background-image: url(imagens/Union.png);
+    margin: 30px;
+    }
+    #footer
+    {
+        background-color: #121212;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .h1-footer
+    {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    h2.text-footer
+    {
+        font-weight: bold;
+    }
+    .text-footer
+    {
+        font-size: 16px;
+        margin: 0;
+    }
+    #visitar>p
+    {
+        font-size: 20px;
+        font-weight:500;
+    }
+    #ul-footer
+    {
+        padding: 0;
+    }
+    #footer>.container-fluid,#footer>.container-fluid>.row
+    {
+        height: 100%;
+    }
+    #cont-footer
+    {
+        height: 60%;
+    }
+    #onde
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 420px;
+    }
+    #onde-texto
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 270px;
+    }
+    #visitar
+    {
+        height: 74px;
+        width: 290px;
+        border-radius: 3px;
+        background-color: #706EF4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 450px;
+    }
+    #onde-resto
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 140px;
+    }
+    #adicional
+    {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #direitos,#politicas
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+ /*---------------------------------------- MENU BURGUER----------------------------------------------------------*/
 #col-burguer
 {
     display: flex;
@@ -85,12 +235,12 @@
 {
     right: 0;
 }
-
+/*---------------------------------------- MENU BURGUER----------------------------------------------------------*/
 @media screen and (max-width:767px) 
 {
 header
 {
-    width: 100vw;
+    width: 100%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -99,7 +249,7 @@ header
 }
 .cont-cell
 {
-    width: 100vw;
+    width: 100%;
     display: flex;
     height: 70px;
     box-shadow: 1px 1px 5px rgba(55, 51, 51, 0.589);
@@ -121,7 +271,7 @@ header
 #sla
 {
     height: 720px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -129,7 +279,7 @@ header
 }
 #sla>svg
 {
-    margin: 60px;
+    margin: 60px; 
 }
 .titulo
 {
@@ -174,64 +324,14 @@ justify-content: center;
 {
     color: white;
 }
-.vertodos
-{
-    font-weight: bold;
-    font-size: 20px;
-    width: 228px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
-.vertodos>div
-{
-    background-color: black;
-    border-radius: 50%;
-    width: 46px;
-    height: 46px;
-    
-}
-.vertodos>p
-{
 
-    width: 180px;
-    
-}
-.boxduvidas
-{
- width: 290px;
- height: 46px;
- background-color: black;
- color: white;
- margin-top: 10px;
- border-radius: 20px;
- display: flex;
- align-items: center;
- 
-}
-.boxduvidas>p
-{       
-    display: block;
-    transform: translate(-10%,30%);
-    font-weight: bold;
-    font-size: 20px;
-}
-.boxduvidas>div
-{
- width: 22px;
- height: 22px;
- background-color: white;
- margin: 30px;
-}
 #refri
 {
     
     margin-bottom: 10px;
     background-color: #F1F1F1;
     height: 362px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,9 +444,8 @@ justify-content: center;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 600px;
+    height: 800px;
     text-align: center;
-    margin: 10px;
 }
 #video>.container>.row
 {
@@ -354,14 +453,14 @@ justify-content: center;
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-    height: 500px;
+    height: 800px;
 }
 #div-video
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 500px;
     flex-wrap: wrap;
 }
 
@@ -372,6 +471,7 @@ justify-content: center;
     margin-bottom: 40px;
     background-image: url(imagens/Rectangle\ 76.png);
     background-size: cover;
+    position: relative;
 }
 #box-video-2
 {
@@ -380,10 +480,52 @@ justify-content: center;
     margin-bottom: 40px;
     background-image: url(imagens/Rectangle\ 74.png);
     background-size: cover;
+    position: relative;
 }
+.texto-video
+{
+    background-color: #706EF4;
+    height: 66px;
+    margin-top: -45px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    width: 291px;
+    font-size: 20px;
+}
+.play::after
+{
+    content: "";
+    background-image: url(imagens/Group\ 721.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 41px;
+    width: 41px;
+    top: 62px;
+    left: 125px;
+}
+
 #video>.vertodos
 {
     margin-top: 10px;
+}
+#footer
+{
+    height: 1120px;
+}
+#row-footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#cont-footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 }
 @media screen and (min-width:768px) and (max-width:991px)
@@ -392,7 +534,7 @@ justify-content: center;
     {
         top: 20px;
         left: 0px;
-        width: 100vw;
+        width: 100%;
         height: 70px;
         color: transparent;
         position: absolute;
@@ -413,7 +555,7 @@ justify-content: center;
     .cont-cell
     {
         display: flex;
-        width: 100vw;
+        width: 100%;
         height: 70px;
         align-items: center;
         justify-content: space-between;
@@ -461,11 +603,12 @@ justify-content: center;
         font-weight: bold;
         color: white;
         font-size: 60px;
+        margin-top: 70px;
     }
     #sla
     {
         height: 545px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -497,6 +640,7 @@ justify-content: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin-top: 70px;
     }
     #section1-phone>#sla>.ver-duvida>.vertodos
     {
@@ -511,63 +655,15 @@ justify-content: center;
         justify-content: space-between;
         align-items: center;
     }
-    .vertodos
-    {
-        font-weight: bold;
-        font-size: 20px;
-        width: 228px;
-        height: 46px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .vertodos>div
-    {
-        background-color: black;
-        border-radius: 50%;
-        width: 46px;
-        height: 46px;
-        
-    }
-    .vertodos>p
-    {
-        transform: translate(5%,30%);
-        width: 180px;
-        
-    }
-    .boxduvidas
-    {
-    width: 290px;
-    height: 46px;
-    background-color: black;
-    color: white;
-    margin-top: 10px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
     
-    }
-    .boxduvidas>p
-    {       
-        display: block;
-        transform: translate(-10%,30%);
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .boxduvidas>div
-    {
-    width: 22px;
-    height: 22px;
-    background-color: white;
-    margin: 30px;
-    }
+    
     #refri
     {
         
         margin-bottom: 10px;
         background-color: #F1F1F1;
         height: 362px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -722,7 +818,7 @@ justify-content: center;
     justify-content: center;
     align-content: center;
     height: 800px;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 #video>.container>.row
@@ -747,7 +843,10 @@ justify-content: center;
     flex-wrap: wrap;
     width: 900px;
 }
-
+.box-video
+{
+    width: 335px;
+}
 #box-video-1
 {
     height: 190px;
@@ -755,6 +854,7 @@ justify-content: center;
     margin-bottom: 40px;
     background-image: url(imagens/Rectangle\ 76.png);
     background-size: cover;
+    position: relative;
 }
 #box-video-2
 {
@@ -763,20 +863,45 @@ justify-content: center;
     margin-bottom: 40px;
     background-image: url(imagens/Rectangle\ 74.png);
     background-size: cover;
+    position: relative;
+}
+.texto-video
+{
+    background-color: #706EF4;
+    height: 66px;
+    margin-top: -45px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    font-size: 20px;
+}
+.play::after
+{
+    content: "";
+    background-image: url(imagens/Group\ 721.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    top: 71px;
+    left: 144px;
 }
 #video>.vertodos
 {
     margin-top: 10px;
 }
+
 }
-@media screen and (min-width:992px)
+@media screen and (min-width:992px) and (max-width:1199px)
 {
 
     header
     {
         top: 20px;
         left: 0px;
-        width: 100vw;
+        width: 100%;
         height: 70px;
         color: transparent;
         position: absolute;
@@ -797,7 +922,7 @@ justify-content: center;
     .cont-cell
     {
         display: flex;
-        width: 100vw;
+        width: 100%;
         height: 70px;
         align-items: center;
         justify-content: space-between;
@@ -845,11 +970,11 @@ justify-content: center;
     #sla
     {
         height: 545px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        
+        margin-top: 100px;
 
     }
     .textbox
@@ -891,63 +1016,15 @@ justify-content: center;
         justify-content: space-between;
         align-items: center;
     }
-    .vertodos
-    {
-        font-weight: bold;
-        font-size: 20px;
-        width: 228px;
-        height: 46px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .vertodos>div
-    {
-        background-color: black;
-        border-radius: 50%;
-        width: 46px;
-        height: 46px;
-        
-    }
-    .vertodos>p
-    {
-        transform: translate(5%,30%);
-        width: 180px;
-        
-    }
-    .boxduvidas
-    {
-    width: 290px;
-    height: 46px;
-    background-color: black;
-    color: white;
-    margin-top: 10px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
     
-    }
-    .boxduvidas>p
-    {       
-        display: block;
-        transform: translate(-10%,30%);
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .boxduvidas>div
-    {
-    width: 22px;
-    height: 22px;
-    background-color: white;
-    margin: 30px;
-    }
+    
     #refri
     {
         
         margin-bottom: 10px;
         background-color: #F1F1F1;
         height: 407px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1123,7 +1200,7 @@ justify-content: center;
     justify-content: center;
     align-content: center;
     height: 600px;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 #video>.container>.row
@@ -1156,6 +1233,7 @@ justify-content: center;
     margin-bottom: 40px;
     background-image: url(imagens/Rectangle\ 76.png);
     background-size: cover;
+    position: relative;
 }
 #box-video-2
 {
@@ -1164,6 +1242,422 @@ justify-content: center;
     margin-bottom: 40px;
     background-image: url(imagens/Rectangle\ 74.png);
     background-size: cover;
+    position: relative;
+}
+.texto-video
+{
+    background-color: #706EF4;
+    height: 66px;
+    margin-top: -45px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 33px;
+    font-size: 20px;
+}
+.play::after
+{
+    content: "";
+    background-image: url(imagens/Group\ 721.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    top: 95px;
+    left: 193px;
+}
+#video>.container>.row>.vertodos
+{
+    margin-top: 37px;
+    width: 270px;
+    padding: 0;
+}
+}
+@media screen and (min-width:1200px)
+{
+    header
+    {
+        top: 20px;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        color: transparent;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    #container-header
+    {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #section1-phone
+    {
+    background-image:url(imagens/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: flex-start;
+    justify-content: center;
+    }
+    #menu-desk>ul
+    {
+        width: 723px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+    #container-header>#menu-desk>ul>li>a
+    {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+    }
+    #container-header>svg
+    {
+        width: 251px;
+    }
+    .titulo
+    {
+        width: 584;
+        height: 120px;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+    #section1-phone>#sla>.titulo>h1
+    {
+        font-weight: bold;
+        color: white;
+        font-size: 60px;
+    }
+    #sla
+    {
+        height: 800px;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-left: 100px;
+
+    }
+    .textbox
+    {
+        width: 290px;
+        height: 81px;
+        background-color: #000000;
+        border-radius: 3px;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin: 20px 20px 20px 0px;
+        
+    }
+    .textbox>p
+    {
+        transform: translate(10%,20%);
+        
+    }
+    .div-textbox
+    {
+        width: 600px;
+        height: 245px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #section1-phone>#sla>.ver-duvida>.vertodos
+    {
+        color: white;
+    }
+    .ver-duvida
+    {
+        width: 600px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    #refri
+    {
+        
+        /* margin-bottom: 10px; */
+        background-color: #F1F1F1;
+        height: 407px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #refri>.container>.row
+    {
+        height: 400px;
+    }
+    .row
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+#refri-texto
+{
+    width: 410px;;
+    height:250px ;
+    color: #000000;
+    font-size: 32px;
+}
+#refri-imagem
+{
+    width: 500px;;
+    height:105px ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#coca
+{
+    height: 110px;
+    width: 190px;
+    background-repeat: no-repeat;
+    background-image: url(imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.svg);
+    background-size: contain;
+
+}
+#pepsi
+{
+    height: 100px;
+    width: 240px;
+    background-repeat: no-repeat;
+    background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
+    background-size: contain;
+}
+#mulher
+{
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+    height: 900px;
+}
+#mulher>.container>.row
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 900px;
+}
+#img-mulher
+{
+    height: 450px;
+    width: 437px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    padding-top: 30px;
+    background-image: url(imagens/Group\ 1221.png);
+}
+.titulo-mulher
+{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-mulher>h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+.titulo-mulher>p
+{
+    font-size: 18px;
+    color: #858585;
+}
+#button-mulher
+{
+    display: flex;
+    width: 298px;
+    height: 48px;
+    justify-content: space-between;
+    top: 10px;
+}
+#atual
+{
+    background-color: #706ef4;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#anos
+{
+    color: #706ef4;
+    border: 2px solid #706ef4;
+    background-color: #ffffff;
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div-texto-mulher
+{
+    height: 50px;
+    width: 300px;
+}    
+#div-texto-mulher>div
+{
+    width: 300px;
+    height: 100px;
+}
+.texto-mulher
+{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: start;
+    border-bottom: 4px solid #706EF4;
+}
+.texto-mulher::before
+{
+    content: url(imagens/Group\ 1067.svg);
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+#mulher-geral
+{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 98px;
+    flex-flow: column wrap;
+}
+#button-mulher-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+
+#div-texto-mulher-2
+{
+    height: 270px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows:70px 70px 70px;
+    gap: 30px;
+}    
+#div-texto-mulher-2>div
+{
+    width: 200px;
+    height: 100px;
+}
+#video
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 1100px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+#video>.container
+{
+    height: 1100px;
+}
+#video>.container>.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    height: 1100px;
+}
+#video>.container>.row>h1
+{
+    font-size: 60px;
+}
+
+#div-video
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:800px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#box-video-1
+{
+    height: 306px;
+    width: 543px;
+    margin-bottom: 30px;
+    background-image: url(imagens/Rectangle\ 76.png);
+    background-size: cover;
+    position: relative;
+}
+#box-video-2
+{
+    height: 306px;
+    width: 543px;
+    margin-bottom: 30px;
+    background-image: url(imagens/Rectangle\ 74.png);
+    background-size: cover;
+    position: relative;
+}
+#box-video-3
+{
+    height: 306px;
+    width: 543px;
+    margin-bottom: 30px;
+    background-image: url(imagens/Rectangle\ 78.png);
+    background-size: cover;
+    position: relative;
+}
+#box-video-4
+{
+    height: 306px;
+    width: 540px;
+    margin-bottom: 30px;
+    background-image: url(imagens/image\ 11.png);
+    background-size: cover;
+    position: relative;
+
+}
+.play::after
+{
+    content: url(imagens/Group\ 721.png);
+    position: absolute;
+    top: 114px;
+    left: 233px;
 }
 #video>.container>.row>.vertodos
 {
@@ -1171,5 +1665,16 @@ justify-content: center;
     width: 270px;
     padding: 0;
 }
+.texto-video
+{
+    background-color: #706EF4;
+    height: 80px;
+    margin-top: -35px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 33px;
+    font-size: 20px;
 }
-
+}
