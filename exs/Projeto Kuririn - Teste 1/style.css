@@ -5,6 +5,7 @@
     font-family: "Istok Web", sans-serif;
 }
 /* ---------------------------------HEADER GERAL------------------------------------------- */
+
 #lupa
 {
     background-image: url(imagens/Group\ 1058.png);
@@ -22,6 +23,7 @@ ul>li>a
     text-decoration: none;
     color: white;
 }
+
 /* ---------------------------------HEADER GERAL------------------------------------------- */
 
 /* ---------------------------------Section Homem-Geral------------------------------------------ */
@@ -170,6 +172,68 @@ ul>li>a
 
 /* -----------------------------Section Mulher-Geral---------------------------------------- */
 
+/* -----------------------------Section Video-Geral---------------------------------------- */
+#video
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+#video>.container>.row
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+}
+#video>.container>.row>h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+#div-video
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#box-video-1
+{
+    margin-bottom: 40px;
+    background-image: url(imagens/Rectangle\ 76.png);
+    background-size: cover;
+    position: relative;
+}
+#box-video-2
+{
+    margin-bottom: 40px;
+    background-image: url(imagens/Rectangle\ 74.png);
+    background-size: cover;
+    position: relative;
+}
+.texto-video
+{
+    background-color: #706EF4;
+    height: 66px;
+    margin-top: -45px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+.play::after
+{
+    content: "";
+    background-image: url(imagens/Group\ 721.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+/* -----------------------------Section Video-Geral---------------------------------------- */
+
 /* -----------------------------Footer-Geral---------------------------------------- */
 
 #footer
@@ -273,6 +337,22 @@ ul>li>a
         justify-content: center;
         align-items: center;
         text-align: center;
+        position: relative;
+    }
+    #direitos>.text-footer
+    {
+        width: 100%;
+    }
+    #direitos>.text-footer::after
+    {
+        content: url(imagens/Group.svg);
+        position: relative;
+        width: 50px;
+        height: 10px;
+        margin-left: 5px;
+        transform: translate(0,-10%);
+        top: 3px;
+
     }
 /* -----------------------------Footer-Geral---------------------------------------- */
 
@@ -512,67 +592,41 @@ justify-content: center;
 /* ---------------------------------Section Video------------------------------------------- */
 #video
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     height: 800px;
-    text-align: center;
 }
 #video>.container>.row
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center;
     height: 800px;
+}
+#video>.container>.row>h1
+{
+    font-size: 32px;
+    /* VER PQ N ESTA PEGANDO */
 }
 #div-video
 {
-    display: flex;
     justify-content: center;
-    align-items: center;
     height: 500px;
-    flex-wrap: wrap;
 }
 
 #box-video-1
 {
     height: 165px;
     width: 291px;
-    margin-bottom: 40px;
-    background-image: url(imagens/Rectangle\ 76.png);
-    background-size: cover;
-    position: relative;
 }
+
 #box-video-2
 {
     height: 165px;
     width: 291px;
-    margin-bottom: 40px;
-    background-image: url(imagens/Rectangle\ 74.png);
-    background-size: cover;
-    position: relative;
 }
 .texto-video
 {
-    background-color: #706EF4;
-    height: 66px;
-    margin-top: -45px;
-    color: white;
-    display: flex;
-    align-items: center;
     padding-top: 20px;
     width: 291px;
-    font-size: 20px;
 }
 .play::after
 {
-    content: "";
-    background-image: url(imagens/Group\ 721.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
     height: 41px;
     width: 41px;
     top: 62px;
@@ -656,7 +710,7 @@ justify-content: center;
 /* ---------------------------------Section Homem------------------------------------------- */
     #section1-phone
     {
-    background-image:url(imagens/hero-bg.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%), url(imagens/hero-bg.png) no-repeat;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
@@ -833,36 +887,21 @@ justify-content: center;
 /* ---------------------------------Section Video------------------------------------------- */
 #video
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     height: 800px;
-    width: 100%;
-    text-align: center;
 }
+
 #video>.container>.row
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center;
     height: 700px;
 }
-#video>.container>.row>h1
-{
-    font-size: 60px;
-}
+
 
 #div-video
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 300px;
-    flex-wrap: wrap;
     width: 900px;
 }
+
 .box-video
 {
     width: 335px;
@@ -871,38 +910,20 @@ justify-content: center;
 {
     height: 190px;
     width: 335px;
-    margin-bottom: 40px;
-    background-image: url(imagens/Rectangle\ 76.png);
-    background-size: cover;
-    position: relative;
 }
+
 #box-video-2
 {
     height: 190px;
     width: 335px;
-    margin-bottom: 40px;
-    background-image: url(imagens/Rectangle\ 74.png);
-    background-size: cover;
-    position: relative;
 }
 .texto-video
 {
-    background-color: #706EF4;
-    height: 66px;
-    margin-top: -45px;
-    color: white;
-    display: flex;
-    align-items: center;
     padding-top: 18px;
-    font-size: 20px;
 }
+
 .play::after
 {
-    content: "";
-    background-image: url(imagens/Group\ 721.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
     height: 48px;
     width: 48px;
     top: 71px;
@@ -993,7 +1014,7 @@ justify-content: center;
 /* ---------------------------------Section Homem------------------------------------------- */
     #section1-phone
     {
-    background-image:url(imagens/hero-bg.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%), url(imagens/hero-bg.png) no-repeat;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
@@ -1171,36 +1192,23 @@ justify-content: center;
 /* ---------------------------------Section Mulher------------------------------------------- */
 
 /* ---------------------------------Section Video------------------------------------------- */
+
 #video
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     height: 600px;
-    width: 100%;
-    text-align: center;
+    width: 100%
 }
+
 #video>.container>.row
 {
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-content: center;
     height: 500px;
-}
-#video>.container>.row>h1
-{
-    font-size: 60px;
 }
 
 #div-video
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height: 300px;
-    flex-wrap: wrap;
     width: 1000px;
 }
 
@@ -1208,39 +1216,21 @@ justify-content: center;
 {
     height: 255px;
     width: 451px;
-    margin-bottom: 40px;
-    background-image: url(imagens/Rectangle\ 76.png);
-    background-size: cover;
-    position: relative;
 }
+
 #box-video-2
 {
     height: 255px;
     width: 451px;
-    margin-bottom: 40px;
-    background-image: url(imagens/Rectangle\ 74.png);
-    background-size: cover;
-    position: relative;
 }
 .texto-video
 {
-    background-color: #706EF4;
-    height: 66px;
-    margin-top: -45px;
-    color: white;
-    display: flex;
-    align-items: center;
     padding-top: 20px;
     padding-left: 33px;
-    font-size: 20px;
 }
+
 .play::after
 {
-    content: "";
-    background-image: url(imagens/Group\ 721.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
     height: 65px;
     width: 65px;
     top: 95px;
@@ -1314,7 +1304,7 @@ justify-content: center;
 /* ---------------------------------Section Homem------------------------------------------- */
     #section1-phone
     {
-    background-image:url(imagens/hero-bg.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%), url(imagens/hero-bg.png) no-repeat;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
@@ -1333,13 +1323,80 @@ justify-content: center;
         justify-content: space-between;
         align-items: end;
     }
-    #container-header>#menu-desk>ul>li>a
+/* ------------------------------------DROP MENU-------------------------------- */
+.link-desktop
     {
+        background: none;
+        border: none;
         text-decoration: none;
         font-weight: bold;
         font-size: 16px;
         color: white;
+        cursor: pointer;
     }
+    .dropdown
+    {
+        position: relative;
+    }
+    .dropdown::after
+    {
+        content: "";
+        position: absolute;
+        background-image: url(imagens/Vector\ 5.svg);
+        width: 15px;
+        height: 10px;
+        background-repeat: no-repeat;
+        top: 20%;
+        transition: rotate 150ms ease-in-out;
+    }
+    .drop-menu
+{
+    position: absolute;
+    background-color: #6b6aea;
+    font-size: 21px;
+    width: 288px;
+    height: 237px;
+    border-radius: 20px;
+    transform: translate(-22%,0);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    left: 0;
+    top:90%;
+    display: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
+}
+.dropdown:hover .drop-menu
+{
+    display: flex;
+    transform: translateY(0px);
+    pointer-events: all;
+    transform: translate(-22%,0);
+}
+.drop-menu>ul
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    text-align: center;
+    padding: 0;
+}
+.drop-menu>ul>li
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+.drop-menu>ul>li:hover
+{
+    background-color: #4C4CA8;
+}
+/* ------------------------------------DROP MENU-------------------------------- */
+
     #container-header>svg
     {
         width: 251px;
@@ -1520,14 +1577,7 @@ justify-content: center;
 /* ---------------------------------Section Video------------------------------------------- */
 #video
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     height: 1100px;
-    width: 100%;
-    text-align: center;
-    margin: 0;
 }
 #video>.container
 {
@@ -1535,44 +1585,27 @@ justify-content: center;
 }
 #video>.container>.row
 {
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-content: center;
     height: 1100px;
-}
-#video>.container>.row>h1
-{
-    font-size: 60px;
 }
 
 #div-video
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     height:800px;
-    flex-wrap: wrap;
     width: 100%;
 }
-
 #box-video-1
 {
     height: 306px;
     width: 543px;
     margin-bottom: 30px;
-    background-image: url(imagens/Rectangle\ 76.png);
-    background-size: cover;
-    position: relative;
 }
 #box-video-2
 {
     height: 306px;
     width: 543px;
     margin-bottom: 30px;
-    background-image: url(imagens/Rectangle\ 74.png);
-    background-size: cover;
-    position: relative;
 }
 #box-video-3
 {
@@ -1595,8 +1628,6 @@ justify-content: center;
 }
 .play::after
 {
-    content: url(imagens/Group\ 721.png);
-    position: absolute;
     top: 114px;
     left: 233px;
 }
@@ -1608,16 +1639,12 @@ justify-content: center;
 }
 .texto-video
 {
-    background-color: #706EF4;
     height: 80px;
     margin-top: -35px;
-    color: white;
-    display: flex;
-    align-items: center;
     padding-top: 20px;
     padding-left: 33px;
-    font-size: 20px;
 }
+
 /* ---------------------------------Section Video------------------------------------------- */
 
 /* ---------------------------------Footer------------------------------------------- */
