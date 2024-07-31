@@ -4,6 +4,7 @@
     margin: 0px;
     font-family: "Istok Web", sans-serif;
 }
+/* ---------------------------------HEADER GERAL------------------------------------------- */
 #lupa
 {
     background-image: url(imagens/Group\ 1058.png);
@@ -20,6 +21,30 @@ ul>li>a
 {
     text-decoration: none;
     color: white;
+}
+/* ---------------------------------HEADER GERAL------------------------------------------- */
+
+/* ---------------------------------Section Homem-Geral------------------------------------------ */
+
+.textbox
+    {
+        width: 290px;
+        height: 81px;
+        background-color: #000000;
+        border-radius: 3px;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin: 20px 20px 20px 0px;
+    }
+.div-textbox
+{
+    width: 600px;
+    height: 245px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 .vertodos
     {
@@ -73,12 +98,91 @@ ul>li>a
     background-image: url(imagens/Union.png);
     margin: 30px;
     }
-    #footer
+/* -----------------------------Section Homem-Geral---------------------------------------- */
+
+/* -----------------------------Section Mulher-Geral---------------------------------------- */
+#mulher
+{
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+}
+#img-mulher
+{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    padding-top: 30px;
+}
+#button-mulher
+{
+    display: flex;
+    width: 298px;
+    height: 48px;
+    justify-content: space-between;
+}
+#button-mulher-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 298px;
+}
+#atual
+{
+    background-color: #706ef4;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#anos
+{
+    color: #706ef4;
+    border: 2px solid #706ef4;
+    background-color: #ffffff;
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto-mulher
+{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: start;
+    border-bottom: 4px solid #706EF4;
+}
+.texto-mulher::before
+{
+    content: url(imagens/Group\ 1067.svg);
+    margin-right: 10px;
+    margin-top: 5px;
+
+}
+
+
+/* -----------------------------Section Mulher-Geral---------------------------------------- */
+
+/* -----------------------------Footer-Geral---------------------------------------- */
+
+#footer
     {
         background-color: #121212;
         color: white;
         padding: 0;
         margin: 0;
+    }
+    #logo-footer
+    {
+        display: flex;
+        justify-content: center;
     }
     .h1-footer
     {
@@ -93,12 +197,14 @@ ul>li>a
     {
         font-size: 16px;
         margin: 0;
+        width: 100%;
     }
     #visitar>p
     {
         font-size: 20px;
         font-weight:500;
     }
+
     #ul-footer
     {
         padding: 0;
@@ -110,6 +216,12 @@ ul>li>a
     #cont-footer
     {
         height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
     }
     #onde
     {
@@ -117,6 +229,7 @@ ul>li>a
         flex-direction: column;
         justify-content: space-between;
         height: 420px;
+        width: 290px;
     }
     #onde-texto
     {
@@ -124,11 +237,12 @@ ul>li>a
         flex-direction: column;
         justify-content: space-evenly;
         height: 270px;
+        width: 80%;
     }
     #visitar
     {
         height: 74px;
-        width: 290px;
+        width: 100%;
         border-radius: 3px;
         background-color: #706EF4;
         display: flex;
@@ -160,8 +274,9 @@ ul>li>a
         align-items: center;
         text-align: center;
     }
-    
- /*---------------------------------------- MENU BURGUER----------------------------------------------------------*/
+/* -----------------------------Footer-Geral---------------------------------------- */
+
+/*---------------------------------------- MENU BURGUER----------------------------------------------------------*/
 #col-burguer
 {
     display: flex;
@@ -215,7 +330,6 @@ ul>li>a
     background-color: rgba(86, 70, 70, 0.461);
     height: 80vh;
     width:80%;
-   
     position: fixed;
     top: 25%;
     right: -900px;
@@ -238,6 +352,7 @@ ul>li>a
 /*---------------------------------------- MENU BURGUER----------------------------------------------------------*/
 @media screen and (max-width:767px) 
 {
+    /* ---------------------------------HEADER------------------------------------------- */
 header
 {
     width: 100%;
@@ -256,7 +371,9 @@ header
     align-items: center;
     justify-content: space-between;
 }
+/* ---------------------------------HEADER------------------------------------------- */
 
+/* ---------------------------------Section-Homem------------------------------------------- */
 #section1-phone
 {
     background-image:linear-gradient(to bottom, #413e8c7c, #706ef4) ;
@@ -293,24 +410,17 @@ header
 }
 .textbox
 {
-    width: 290px;
-    height: 81px;
-    background-color: #000000;
-    border-radius: 5px;
-    color: white;
-    display: flex;
     padding-left: 30px;
-    align-items: center;
     font-size: 20px;
     padding-top: 10px; 
+    margin: 0;
 }
+
 .div-textbox
 {
- width: 300px;
- height: 180px;
- display: flex;
- flex-wrap: wrap;
- align-content: space-between;
+    width: 300px;
+    height: 180px;
+    align-content: space-between;
 }
 .ver-duvida
 {
@@ -324,7 +434,9 @@ justify-content: center;
 {
     color: white;
 }
+/* ---------------------------------Section Homem------------------------------------------- */
 
+/* ---------------------------------Section Refri------------------------------------------- */
 #refri
 {
     
@@ -377,67 +489,27 @@ justify-content: center;
     background-repeat: no-repeat;
     background-image: url(imagens/sap-business-one-logo-banner\ 1.svg)
 }
+/* ---------------------------------Section Refri------------------------------------------- */
+
+/* ---------------------------------Section Mulher------------------------------------------- */
 #mulher
 {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 #img-mulher>
 {
     height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background-image: url(imagens/Group\ 1220.png);
 }
-#button-mulher
-{
-    display: flex;
-    width: 298px;
-    height: 48px;
-    justify-content: space-between;
-}
-#atual
-{
-    background-color: #706ef4;
-    width: 100px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-#anos
-{
-    color: #706ef4;
-    border: 2px solid #706ef4;
-    background-color: #ffffff;
-    width: 140px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .texto-mulher
 {
     padding: 10px;
     margin: 15px;
-    text-align: start;
-    border-bottom:4px solid#706EF4;;
 }
-.texto-mulher::before
-{
-    content: url(imagens/Group\ 1067.svg);
-    margin-right: 10px;
-    margin-top: 5px;
 
-}
+/* ---------------------------------Section Mulher------------------------------------------- */
+
+/* ---------------------------------Section Video------------------------------------------- */
 #video
 {
     display: flex;
@@ -511,6 +583,9 @@ justify-content: center;
 {
     margin-top: 10px;
 }
+/* ---------------------------------Section Video------------------------------------------- */
+
+/* ---------------------------------Footer------------------------------------------- */
 #footer
 {
     height: 1120px;
@@ -521,15 +596,17 @@ justify-content: center;
     flex-direction: column;
     justify-content: space-evenly;
 }
-#cont-footer
+
+#mapa
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    width: 290px;
 }
 }
+/* ---------------------------------Footer------------------------------------------- */
+
 @media screen and (min-width:768px) and (max-width:991px)
 {
+/* ---------------------------------Header------------------------------------------- */
     header
     {
         top: 20px;
@@ -574,6 +651,9 @@ justify-content: center;
     {
         left: 25%;
     }
+/* ---------------------------------Header------------------------------------------- */
+
+/* ---------------------------------Section Homem------------------------------------------- */
     #section1-phone
     {
     background-image:url(imagens/hero-bg.png);
@@ -615,19 +695,6 @@ justify-content: center;
         
 
     }
-    .textbox
-    {
-        width: 290px;
-        height: 81px;
-        background-color: #000000;
-        border-radius: 3px;
-        color: white;
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        margin: 20px 20px 20px 0px;
-        
-    }
     .textbox>p
     {
         transform: translate(10%,20%);
@@ -635,11 +702,6 @@ justify-content: center;
     }
     .div-textbox
     {
-        width: 600px;
-        height: 245px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
         margin-top: 70px;
     }
     #section1-phone>#sla>.ver-duvida>.vertodos
@@ -655,7 +717,9 @@ justify-content: center;
         justify-content: space-between;
         align-items: center;
     }
-    
+/* ---------------------------------Section Homem------------------------------------------- */
+
+/* ---------------------------------Section Refri------------------------------------------- */
     
     #refri
     {
@@ -711,12 +775,11 @@ justify-content: center;
     background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
     background-size: contain;
 }
+/* ---------------------------------Section Refri------------------------------------------- */
+
+/* ---------------------------------Section Mulher------------------------------------------- */
 #mulher
 {
-    display: flex;
-    justify-content: center;
-    align-content: space-evenly;
-    text-align: center;
     height: 1300px;
 }
 #mulher>.container>.row
@@ -730,14 +793,10 @@ justify-content: center;
 {
     height: 454px;
     width: 454px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    padding-top: 30px;
     background-image: url(imagens/Group\ 1220.png);
 }
+
+
 .titulo-mulher
 {
     height: 70px;
@@ -753,36 +812,6 @@ justify-content: center;
     font-size: 18px;
     color: #858585;
 }
-#button-mulher
-{
-    display: flex;
-    width: 298px;
-    height: 48px;
-    justify-content: space-between;
-}
-#atual
-{
-    background-color: #706ef4;
-    width: 100px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-#anos
-{
-    color: #706ef4;
-    border: 2px solid #706ef4;
-    background-color: #ffffff;
-    width: 140px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #div-texto-mulher
 {
     height: 50px;
@@ -797,20 +826,11 @@ justify-content: center;
     width: 200px;
     height: 100px;
 }
-.texto-mulher
-{
-    padding-bottom: 10px;
-    padding-left: 10px;
-    text-align: start;
-    border-bottom: 4px solid #706EF4;
-}
-.texto-mulher::before
-{
-    content: url(imagens/Group\ 1067.svg);
-    margin-right: 10px;
-    margin-top: 5px;
 
-}
+
+/* ---------------------------------Section Mulher------------------------------------------- */
+
+/* ---------------------------------Section Video------------------------------------------- */
 #video
 {
     display: flex;
@@ -892,11 +912,38 @@ justify-content: center;
 {
     margin-top: 10px;
 }
+/* ---------------------------------Section Video------------------------------------------- */
+
+/* ---------------------------------Footer------------------------------------------- */
+#footer
+{
+    height: 823px;
+}
+#cont-footer
+{
+    flex-direction: row;
+    height: 400px;
+    align-items: start;
+}
+#onde
+{
+    width: 328px;
+}
+#onde-texto
+{
+    justify-content: space-between;
+}
+#adicional
+{
+    max-width: 600px;
+}
+/* ---------------------------------Footer------------------------------------------- */
+
 
 }
 @media screen and (min-width:992px) and (max-width:1199px)
 {
-
+/* ---------------------------------Header------------------------------------------- */
     header
     {
         top: 20px;
@@ -941,6 +988,9 @@ justify-content: center;
     {
         left: 25%;
     }
+/* ---------------------------------Header------------------------------------------- */
+
+/* ---------------------------------Section Homem------------------------------------------- */
     #section1-phone
     {
     background-image:url(imagens/hero-bg.png);
@@ -977,31 +1027,10 @@ justify-content: center;
         margin-top: 100px;
 
     }
-    .textbox
-    {
-        width: 290px;
-        height: 81px;
-        background-color: #000000;
-        border-radius: 3px;
-        color: white;
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        margin: 20px 20px 20px 0px;
-        
-    }
     .textbox>p
     {
         transform: translate(10%,20%);
         
-    }
-    .div-textbox
-    {
-        width: 600px;
-        height: 245px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
     }
     #section1-phone>#sla>.ver-duvida>.vertodos
     {
@@ -1016,8 +1045,9 @@ justify-content: center;
         justify-content: space-between;
         align-items: center;
     }
+/* ---------------------------------Section Homem------------------------------------------- */
     
-    
+/* ---------------------------------Section Refri------------------------------------------- */
     #refri
     {
         
@@ -1072,12 +1102,11 @@ justify-content: center;
     background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
     background-size: contain;
 }
+/* ---------------------------------Section Refri------------------------------------------- */
+
+/* ---------------------------------Section Mulher------------------------------------------- */
 #mulher
 {
-    display: flex;
-    justify-content: center;
-    align-content: space-evenly;
-    text-align: center;
     height: 750px;
 }
 #mulher>.container>.row
@@ -1091,14 +1120,9 @@ justify-content: center;
 {
     height: 324px;
     width: 316px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    padding-top: 30px;
     background-image: url(imagens/Group\ 1221.png);
 }
+
 .titulo-mulher
 {
     height: 200px;
@@ -1116,37 +1140,7 @@ justify-content: center;
     font-size: 18px;
     color: #858585;
 }
-#button-mulher
-{
-    display: flex;
-    width: 298px;
-    height: 48px;
-    justify-content: space-between;
-    top: 10px;
-}
-#atual
-{
-    background-color: #706ef4;
-    width: 100px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-#anos
-{
-    color: #706ef4;
-    border: 2px solid #706ef4;
-    background-color: #ffffff;
-    width: 140px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 #div-texto-mulher
 {
     height: 50px;
@@ -1157,20 +1151,7 @@ justify-content: center;
     width: 300px;
     height: 100px;
 }
-.texto-mulher
-{
-    padding-bottom: 10px;
-    padding-left: 10px;
-    text-align: start;
-    border-bottom: 4px solid #706EF4;
-}
-.texto-mulher::before
-{
-    content: url(imagens/Group\ 1067.svg);
-    margin-right: 10px;
-    margin-top: 5px;
 
-}
 
 #mulher-geral
 {
@@ -1180,12 +1161,6 @@ justify-content: center;
     align-items: center;
     flex-flow: column wrap;
 }
-#button-mulher-2
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
 #div-texto-mulher-2
 {
     display: flex;
@@ -1193,6 +1168,9 @@ justify-content: center;
     flex-flow: column wrap;
     width: 370px;
 }
+/* ---------------------------------Section Mulher------------------------------------------- */
+
+/* ---------------------------------Section Video------------------------------------------- */
 #video
 {
     display: flex;
@@ -1274,9 +1252,42 @@ justify-content: center;
     width: 270px;
     padding: 0;
 }
+/* ---------------------------------Section Video------------------------------------------- */
+
+/* ---------------------------------Footer------------------------------------------- */
+#footer
+{
+    height: 663px;
 }
+#logo-footer
+{
+    height:350px;
+}
+#mapa
+{
+    width: 227px;
+}
+#onde
+{
+    width: 328px;
+}
+#onde-texto
+{
+    justify-content: space-between;
+}
+#cont-footer
+{
+    height: 350px;
+    width: 650px;
+    flex-direction: row;
+    align-items: start;
+}
+/* ---------------------------------Footer------------------------------------------- */
+}
+
 @media screen and (min-width:1200px)
 {
+/* ---------------------------------Header------------------------------------------- */
     header
     {
         top: 20px;
@@ -1298,6 +1309,9 @@ justify-content: center;
         flex-wrap: wrap;
         align-items: center;
     }
+/* ---------------------------------Header------------------------------------------- */
+
+/* ---------------------------------Section Homem------------------------------------------- */
     #section1-phone
     {
     background-image:url(imagens/hero-bg.png);
@@ -1353,32 +1367,12 @@ justify-content: center;
         margin-left: 100px;
 
     }
-    .textbox
-    {
-        width: 290px;
-        height: 81px;
-        background-color: #000000;
-        border-radius: 3px;
-        color: white;
-        display: flex;
-        align-items: center;
-        font-size: 20px;
-        margin: 20px 20px 20px 0px;
-        
-    }
     .textbox>p
     {
         transform: translate(10%,20%);
         
     }
-    .div-textbox
-    {
-        width: 600px;
-        height: 245px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
+
     #section1-phone>#sla>.ver-duvida>.vertodos
     {
         color: white;
@@ -1392,8 +1386,9 @@ justify-content: center;
         justify-content: space-between;
         align-items: center;
     }
+/* ---------------------------------Section Homem------------------------------------------- */
     
-    
+/* ---------------------------------Section Refri------------------------------------------- */
     #refri
     {
         
@@ -1448,12 +1443,11 @@ justify-content: center;
     background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
     background-size: contain;
 }
+/* ---------------------------------Section Refri------------------------------------------- */
+
+/* ---------------------------------Section Mulher------------------------------------------- */
 #mulher
 {
-    display: flex;
-    justify-content: center;
-    align-content: space-evenly;
-    text-align: center;
     height: 900px;
 }
 #mulher>.container>.row
@@ -1467,12 +1461,6 @@ justify-content: center;
 {
     height: 450px;
     width: 437px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-size: cover;
-    padding-top: 30px;
     background-image: url(imagens/Group\ 1221.png);
 }
 .titulo-mulher
@@ -1492,37 +1480,6 @@ justify-content: center;
     font-size: 18px;
     color: #858585;
 }
-#button-mulher
-{
-    display: flex;
-    width: 298px;
-    height: 48px;
-    justify-content: space-between;
-    top: 10px;
-}
-#atual
-{
-    background-color: #706ef4;
-    width: 100px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-#anos
-{
-    color: #706ef4;
-    border: 2px solid #706ef4;
-    background-color: #ffffff;
-    width: 140px;
-    height: 50px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 #div-texto-mulher
 {
     height: 50px;
@@ -1533,20 +1490,8 @@ justify-content: center;
     width: 300px;
     height: 100px;
 }
-.texto-mulher
-{
-    padding-bottom: 10px;
-    padding-left: 10px;
-    text-align: start;
-    border-bottom: 4px solid #706EF4;
-}
-.texto-mulher::before
-{
-    content: url(imagens/Group\ 1067.svg);
-    margin-right: 10px;
-    margin-top: 5px;
 
-}
+
 #mulher-geral
 {
     height: 450px;
@@ -1554,13 +1499,6 @@ justify-content: center;
     justify-content: space-between;
     padding-left: 98px;
     flex-flow: column wrap;
-}
-#button-mulher-2
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 250px;
 }
 
 #div-texto-mulher-2
@@ -1577,6 +1515,9 @@ justify-content: center;
     width: 200px;
     height: 100px;
 }
+/* ---------------------------------Section Mulher------------------------------------------- */
+
+/* ---------------------------------Section Video------------------------------------------- */
 #video
 {
     display: flex;
@@ -1677,4 +1618,35 @@ justify-content: center;
     padding-left: 33px;
     font-size: 20px;
 }
+/* ---------------------------------Section Video------------------------------------------- */
+
+/* ---------------------------------Footer------------------------------------------- */
+#footer
+{
+    height: 663px;
+}
+#logo-footer
+{
+    height:350px;
+}
+#mapa
+{
+    width: 227px;
+}
+#onde
+{
+    width: 328px;
+}
+#onde-texto
+{
+    justify-content: space-between;
+}
+#cont-footer
+{
+    height: 350px;
+    width: 700px;
+    flex-direction: row;
+    align-items: start;
+}
+/* ---------------------------------Footer------------------------------------------- */
 }
