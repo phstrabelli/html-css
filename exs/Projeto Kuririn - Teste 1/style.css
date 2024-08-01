@@ -5,7 +5,25 @@
     font-family: "Istok Web", sans-serif;
 }
 /* ---------------------------------HEADER GERAL------------------------------------------- */
-
+header
+    {
+        top: 20px;
+        left: 0px;
+        width: 100%;
+        height: 70px;
+        color: transparent;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    .cont-cell
+    {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+    }
 #lupa
 {
     background-image: url(imagens/Group\ 1058.png);
@@ -23,11 +41,39 @@ ul>li>a
     text-decoration: none;
     color: white;
 }
+.ver-duvida
+{
+width: 250px;
+height: 200px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
 
 /* ---------------------------------HEADER GERAL------------------------------------------- */
 
 /* ---------------------------------Section Homem-Geral------------------------------------------ */
-
+#section1-phone
+{
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%), url(imagens/hero-bg.png) no-repeat;
+background-repeat: no-repeat;
+background-position: right bottom;
+background-size: cover;
+height: 800px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: flex-start;
+justify-content: center;
+}
+#sla
+    {
+        height: 545px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly; 
+    }
 .textbox
     {
         width: 290px;
@@ -53,7 +99,7 @@ ul>li>a
         
         font-weight: bold;
         font-size: 20px;
-        width: 228px;
+        width: 250px;
         height: 46px;
         display: flex;
         align-items: center;
@@ -70,9 +116,12 @@ ul>li>a
     }
     .vertodos>p
     {
-        transform: translate(5%,30%);
-        width: 180px;
-        
+        width: 200px;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .boxduvidas
     {
@@ -84,12 +133,14 @@ ul>li>a
     border-radius: 20px;
     display: flex;
     align-items: center;
-    
     }
     .boxduvidas>p
     {       
-        display: block;
-        transform: translate(-10%,30%);
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-weight: bold;
         font-size: 20px;
     }
@@ -101,7 +152,52 @@ ul>li>a
     margin: 30px;
     }
 /* -----------------------------Section Homem-Geral---------------------------------------- */
-
+/* -----------------------------Section Refri-Geral---------------------------------------- */
+#refri
+{
+    
+    margin-bottom: 10px;
+    background-color: #F1F1F1;
+    height: 362px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#refri-texto
+{
+    width: 410px;
+    height:250px ;
+    color: #000000;
+    font-size: 32px;
+}
+#refri-imagem
+{
+    width: 500px;;
+    height:105px ;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#coca
+{
+    height: 110px;
+    width: 190px;
+    background-repeat: no-repeat;
+    background-image: url(imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.svg);
+    background-size: contain;
+}
+#pepsi
+{
+    height: 100px;
+    width: 240px;
+    background-repeat: no-repeat;
+    background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
+    background-size: contain;
+}
+/* -----------------------------Section Refri-Geral---------------------------------------- */
 /* -----------------------------Section Mulher-Geral---------------------------------------- */
 #mulher
 {
@@ -160,16 +256,13 @@ ul>li>a
     padding-left: 10px;
     text-align: start;
     border-bottom: 4px solid #706EF4;
+    position: relative;
 }
 .texto-mulher::before
 {
     content: url(imagens/Group\ 1067.svg);
     margin-right: 10px;
-    margin-top: 5px;
-
 }
-
-
 /* -----------------------------Section Mulher-Geral---------------------------------------- */
 
 /* -----------------------------Section Video-Geral---------------------------------------- */
@@ -352,7 +445,10 @@ ul>li>a
         margin-left: 5px;
         transform: translate(0,-10%);
         top: 3px;
-
+    }
+    a.text-footer
+    {
+        text-decoration: none;
     }
 /* -----------------------------Footer-Geral---------------------------------------- */
 
@@ -362,12 +458,15 @@ ul>li>a
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 #burguer
 {
     height: 60px;
     width: 60px;
     position: relative;
+    pointer-events: all;
 }
 #burguer > div> span
 {
@@ -393,7 +492,7 @@ ul>li>a
 }
 #burguer.active > div> span:nth-child(1)
 {
-    top: 35px;
+    top: 55%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
 #burguer.active > div> span:nth-child(2)
@@ -407,14 +506,14 @@ ul>li>a
 }
 .offscreen-menu
 {
-    background-color: rgba(86, 70, 70, 0.461);
-    height: 80vh;
-    width:80%;
+    background-color: #121212d1;
+    height: 100vh;
+    width:100vw;
     position: fixed;
-    top: 25%;
-    right: -900px;
+    top: 70px;
+    left: -1500px;
     font-size: 3rem;
-    transition: .3s ease;
+    transition: .3s ease-in-out;
 }
 .offscreen-menu-on
 {
@@ -423,33 +522,175 @@ ul>li>a
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
 }
 .offscreen-menu.active
 {
-    right: 0;
+    left: 0;
+    z-index: 1;
+}
+.offscreen-menu>ul
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    padding: 0;
+}
+.offscreen-menu>ul>li
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    font-size: 21px;
+}
+.link-drop-burguer:hover
+{
+    background-color:#4C4CA8;
+}
+.drop-menu-burguer
+{
+    position: absolute;
+    background-color: #000000;
+    font-size: 21px;
+    width: 288px;
+    height: 237px;
+    border-radius: 20px;
+    transform: translate(-22%,0);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    left: 0;
+    top:90%;
+    display: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
+}
+.dropdown:hover .drop-menu-burguer
+{
+    display: flex;
+    transform: translateY(0px);
+    pointer-events: all;
+    transform: translate(-22%,0);
+}
+.drop-menu-burguer>ul
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    text-align: center;
+    padding: 0;
+}
+.link-drop-burguer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    font-size: 21px;
 }
 /*---------------------------------------- MENU BURGUER----------------------------------------------------------*/
+/* ------------------------------------DROP MENU-------------------------------- */
+.link-desktop
+    {
+        background: none;
+        border: none;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+        cursor: pointer;
+    }
+    .dropdown
+    {
+        position: relative;
+    }
+    .dropdown::after
+    {
+        content: "";
+        position: absolute;
+        background-image: url(imagens/Vector\ 5.svg);
+        width: 15px;
+        height: 10px;
+        background-repeat: no-repeat;
+        top: 20%;
+        transition: rotate 150ms ease-in-out;
+    }
+    .dropdown:hover::after
+    {
+        transform: rotate(180deg);
+    }
+.drop-menu
+{
+    position: absolute;
+    background-color: #706ef4ca;
+    font-size: 21px;
+    width: 288px;
+    height: 237px;
+    border-radius: 20px;
+    transform: translate(-22%,0);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+    left: 0;
+    top:90%;
+    display: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
+}
+.dropdown:hover .drop-menu
+{
+    display: flex;
+    transform: translateY(0px);
+    pointer-events: all;
+    transform: translate(-22%,0);
+}
+.drop-menu>ul
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    text-align: center;
+    padding: 0;
+}
+.drop-menu>ul>li
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+}
+.drop-menu>ul>li:hover
+{
+    background-color: #4C4CA8;
+}
+
+/* ------------------------------------DROP MENU-------------------------------- */
+
+
 @media screen and (max-width:767px) 
 {
     /* ---------------------------------HEADER------------------------------------------- */
 header
 {
-    width: 100%;
+    top: 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: black;
+    position: fixed;
 }
 .cont-cell
 {
-    width: 100%;
-    display: flex;
-    height: 70px;
     box-shadow: 1px 1px 5px rgba(55, 51, 51, 0.589);
-    align-items: center;
-    justify-content: space-between;
 }
 /* ---------------------------------HEADER------------------------------------------- */
 
@@ -459,19 +700,12 @@ header
     background-image:linear-gradient(to bottom, #413e8c7c, #706ef4) ;
     background-color: lightblue;
     height: 720px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     justify-content: space-evenly;
 }
 #sla
 {
     height: 720px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 #sla>svg
@@ -495,20 +729,16 @@ header
     padding-top: 10px; 
     margin: 0;
 }
-
+.boxduvidas>p
+{
+    margin-right: 10px;
+    width: 170px;
+}
 .div-textbox
 {
     width: 300px;
     height: 180px;
     align-content: space-between;
-}
-.ver-duvida
-{
-width: 250px;
-height: 200px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
 }
 #section1-phone>#sla>.ver-duvida>.vertodos
 {
@@ -517,18 +747,6 @@ justify-content: center;
 /* ---------------------------------Section Homem------------------------------------------- */
 
 /* ---------------------------------Section Refri------------------------------------------- */
-#refri
-{
-    
-    margin-bottom: 10px;
-    background-color: #F1F1F1;
-    height: 362px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 .row
 {
     display: flex;
@@ -542,33 +760,27 @@ justify-content: center;
     display: flex;
     text-align: center;
     align-items: center;
-    color: #000000;
     font-size: 24px;
 }
+
 #refri-imagem
 {
     width: 350px;
     height:62px ;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-
 }
 #coca
 {
     height: 65px;
     width: 110px;
-    background-repeat: no-repeat;
     background-image: url(imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.png);
 }
+
 #pepsi
 {
     height: 50px;
     width: 135px;
-    background-repeat: no-repeat;
-    background-image: url(imagens/sap-business-one-logo-banner\ 1.svg)
 }
+
 /* ---------------------------------Section Refri------------------------------------------- */
 
 /* ---------------------------------Section Mulher------------------------------------------- */
@@ -601,7 +813,6 @@ justify-content: center;
 #video>.container>.row>h1
 {
     font-size: 32px;
-    /* VER PQ N ESTA PEGANDO */
 }
 #div-video
 {
@@ -613,12 +824,14 @@ justify-content: center;
 {
     height: 165px;
     width: 291px;
+    z-index: -1;
 }
 
 #box-video-2
 {
     height: 165px;
     width: 291px;
+    z-index: -1;
 }
 .texto-video
 {
@@ -661,18 +874,6 @@ justify-content: center;
 @media screen and (min-width:768px) and (max-width:991px)
 {
 /* ---------------------------------Header------------------------------------------- */
-    header
-    {
-        top: 20px;
-        left: 0px;
-        width: 100%;
-        height: 70px;
-        color: transparent;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-
-    }
     #burguer > div> span:nth-child(2)::after
 {
     content: "MENU";
@@ -683,14 +884,7 @@ justify-content: center;
     top: -9px;
     left: 50px;
 }
-    .cont-cell
-    {
-        display: flex;
-        width: 100%;
-        height: 70px;
-        align-items: center;
-        justify-content: space-between;
-    }
+
     #col-burguer
     {
         width: 118px;
@@ -705,22 +899,14 @@ justify-content: center;
     {
         left: 25%;
     }
+    .offscreen-menu
+    {
+        top: 0;
+    }
 /* ---------------------------------Header------------------------------------------- */
 
 /* ---------------------------------Section Homem------------------------------------------- */
-    #section1-phone
-    {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%), url(imagens/hero-bg.png) no-repeat;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: cover;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: flex-start;
-    justify-content: center;
-    }
+
     #section1-phone>svg
     {
         display: none;
@@ -739,16 +925,6 @@ justify-content: center;
         font-size: 60px;
         margin-top: 70px;
     }
-    #sla
-    {
-        height: 545px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        
-
-    }
     .textbox>p
     {
         transform: translate(10%,20%);
@@ -766,26 +942,12 @@ justify-content: center;
     {
         width: 600px;
         height: 200px;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
 /* ---------------------------------Section Homem------------------------------------------- */
 
 /* ---------------------------------Section Refri------------------------------------------- */
-    
-    #refri
-    {
-        
-        margin-bottom: 10px;
-        background-color: #F1F1F1;
-        height: 362px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .row
     {
     display: flex;
@@ -800,34 +962,6 @@ justify-content: center;
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    color: #000000;
-    font-size: 32px;
-}
-#refri-imagem
-{
-    width: 500px;;
-    height:105px ;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-}
-#coca
-{
-    height: 110px;
-    width: 190px;
-    background-repeat: no-repeat;
-    background-image: url(imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.svg);
-    background-size: contain;
-
-}
-#pepsi
-{
-    height: 100px;
-    width: 240px;
-    background-repeat: no-repeat;
-    background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
-    background-size: contain;
 }
 /* ---------------------------------Section Refri------------------------------------------- */
 
@@ -849,8 +983,6 @@ justify-content: center;
     width: 454px;
     background-image: url(imagens/Group\ 1220.png);
 }
-
-
 .titulo-mulher
 {
     height: 70px;
@@ -880,8 +1012,6 @@ justify-content: center;
     width: 200px;
     height: 100px;
 }
-
-
 /* ---------------------------------Section Mulher------------------------------------------- */
 
 /* ---------------------------------Section Video------------------------------------------- */
@@ -889,30 +1019,20 @@ justify-content: center;
 {
     height: 800px;
 }
-
 #video>.container>.row
 {
     height: 700px;
 }
-
-
 #div-video
 {
     height: 300px;
     width: 900px;
 }
-
 .box-video
 {
     width: 335px;
 }
-#box-video-1
-{
-    height: 190px;
-    width: 335px;
-}
-
-#box-video-2
+#box-video-1,#box-video-2
 {
     height: 190px;
     width: 335px;
@@ -921,7 +1041,6 @@ justify-content: center;
 {
     padding-top: 18px;
 }
-
 .play::after
 {
     height: 48px;
@@ -938,7 +1057,7 @@ justify-content: center;
 /* ---------------------------------Footer------------------------------------------- */
 #footer
 {
-    height: 823px;
+    height: 800px;
 }
 #cont-footer
 {
@@ -965,18 +1084,6 @@ justify-content: center;
 @media screen and (min-width:992px) and (max-width:1199px)
 {
 /* ---------------------------------Header------------------------------------------- */
-    header
-    {
-        top: 20px;
-        left: 0px;
-        width: 100%;
-        height: 70px;
-        color: transparent;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-
-    }
     #burguer > div> span:nth-child(2)::after
 {
     content: "MENU";
@@ -987,14 +1094,6 @@ justify-content: center;
     top: -9px;
     left: 50px;
 }
-    .cont-cell
-    {
-        display: flex;
-        width: 100%;
-        height: 70px;
-        align-items: center;
-        justify-content: space-between;
-    }
     #col-burguer
     {
         width: 118px;
@@ -1009,22 +1108,14 @@ justify-content: center;
     {
         left: 25%;
     }
+    .offscreen-menu
+    {
+        top: 0;
+    }
 /* ---------------------------------Header------------------------------------------- */
 
 /* ---------------------------------Section Homem------------------------------------------- */
-    #section1-phone
-    {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%), url(imagens/hero-bg.png) no-repeat;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: cover;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: flex-start;
-    justify-content: center;
-    }
+
     .titulo
     {
         width: 584;
@@ -1040,13 +1131,7 @@ justify-content: center;
     }
     #sla
     {
-        height: 545px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         margin-top: 100px;
-
     }
     .textbox>p
     {
@@ -1061,24 +1146,16 @@ justify-content: center;
     {
         width: 600px;
         height: 200px;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
+
 /* ---------------------------------Section Homem------------------------------------------- */
     
 /* ---------------------------------Section Refri------------------------------------------- */
     #refri
     {
-        
-        margin-bottom: 10px;
-        background-color: #F1F1F1;
         height: 407px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     #refri>.container>.row
     {
@@ -1090,39 +1167,6 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     }
-#refri-texto
-{
-    width: 410px;;
-    height:250px ;
-    color: #000000;
-    font-size: 32px;
-}
-#refri-imagem
-{
-    width: 500px;;
-    height:105px ;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-}
-#coca
-{
-    height: 110px;
-    width: 190px;
-    background-repeat: no-repeat;
-    background-image: url(imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.svg);
-    background-size: contain;
-
-}
-#pepsi
-{
-    height: 100px;
-    width: 240px;
-    background-repeat: no-repeat;
-    background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
-    background-size: contain;
-}
 /* ---------------------------------Section Refri------------------------------------------- */
 
 /* ---------------------------------Section Mulher------------------------------------------- */
@@ -1280,16 +1324,8 @@ justify-content: center;
 /* ---------------------------------Header------------------------------------------- */
     header
     {
-        top: 20px;
-        left: 0px;
-        width: 100%;
         height: 50px;
-        color: transparent;
-        position: absolute;
-        display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-
     }
     #container-header
     {
@@ -1299,21 +1335,33 @@ justify-content: center;
         flex-wrap: wrap;
         align-items: center;
     }
+    .link-desktop
+    {
+        position: relative;
+    }
+/* ------------------------------------Frufru MENU-------------------------------- */
+a.link-desktop::before
+{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #F1F1F1;
+    top: 20px;
+    left: 0px;
+    transition: 0.25s ease-in-out;
+}
+a.link-desktop:hover::before
+{
+    width: 100%;
+}
+/* ------------------------------------Frufru MENU-------------------------------- */
 /* ---------------------------------Header------------------------------------------- */
 
 /* ---------------------------------Section Homem------------------------------------------- */
     #section1-phone
     {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%), url(imagens/hero-bg.png) no-repeat;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: cover;
     height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: flex-start;
-    justify-content: center;
     }
     #menu-desk>ul
     {
@@ -1323,80 +1371,6 @@ justify-content: center;
         justify-content: space-between;
         align-items: end;
     }
-/* ------------------------------------DROP MENU-------------------------------- */
-.link-desktop
-    {
-        background: none;
-        border: none;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 16px;
-        color: white;
-        cursor: pointer;
-    }
-    .dropdown
-    {
-        position: relative;
-    }
-    .dropdown::after
-    {
-        content: "";
-        position: absolute;
-        background-image: url(imagens/Vector\ 5.svg);
-        width: 15px;
-        height: 10px;
-        background-repeat: no-repeat;
-        top: 20%;
-        transition: rotate 150ms ease-in-out;
-    }
-    .drop-menu
-{
-    position: absolute;
-    background-color: #6b6aea;
-    font-size: 21px;
-    width: 288px;
-    height: 237px;
-    border-radius: 20px;
-    transform: translate(-22%,0);
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
-    left: 0;
-    top:90%;
-    display: none;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out,transform 150ms ease-in-out;
-}
-.dropdown:hover .drop-menu
-{
-    display: flex;
-    transform: translateY(0px);
-    pointer-events: all;
-    transform: translate(-22%,0);
-}
-.drop-menu>ul
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-    text-align: center;
-    padding: 0;
-}
-.drop-menu>ul>li
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 20%;
-}
-.drop-menu>ul>li:hover
-{
-    background-color: #4C4CA8;
-}
-/* ------------------------------------DROP MENU-------------------------------- */
-
     #container-header>svg
     {
         width: 251px;
@@ -1418,11 +1392,7 @@ justify-content: center;
     {
         height: 800px;
         width: 800px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         margin-left: 100px;
-
     }
     .textbox>p
     {
@@ -1438,8 +1408,6 @@ justify-content: center;
     {
         width: 600px;
         height: 200px;
-        display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -1448,14 +1416,7 @@ justify-content: center;
 /* ---------------------------------Section Refri------------------------------------------- */
     #refri
     {
-        
-        /* margin-bottom: 10px; */
-        background-color: #F1F1F1;
         height: 407px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     #refri>.container>.row
     {
@@ -1467,39 +1428,6 @@ justify-content: center;
     justify-content: center;
     align-items: center;
     }
-#refri-texto
-{
-    width: 410px;;
-    height:250px ;
-    color: #000000;
-    font-size: 32px;
-}
-#refri-imagem
-{
-    width: 500px;;
-    height:105px ;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-}
-#coca
-{
-    height: 110px;
-    width: 190px;
-    background-repeat: no-repeat;
-    background-image: url(imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.svg);
-    background-size: contain;
-
-}
-#pepsi
-{
-    height: 100px;
-    width: 240px;
-    background-repeat: no-repeat;
-    background-image: url(imagens/sap-business-one-logo-banner\ 1.svg);
-    background-size: contain;
-}
 /* ---------------------------------Section Refri------------------------------------------- */
 
 /* ---------------------------------Section Mulher------------------------------------------- */
