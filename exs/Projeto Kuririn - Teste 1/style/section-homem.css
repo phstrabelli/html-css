@@ -1,6 +1,6 @@
 #section1-phone
 {
-background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0) 100%), url(../imagens/hero-bg.png) no-repeat;
+background: linear-gradient(to bottom, #1e1e4273, #1e1e4200), url(../imagens/hero-bg.png) no-repeat;
 background-repeat: no-repeat;
 background-position: right bottom;
 background-size: cover;
@@ -9,7 +9,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 text-align: flex-start;
-justify-content: center;
+justify-content: center!important;
 }
 #sla
     {
@@ -17,7 +17,8 @@ justify-content: center;
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin-top: 204px;
+        margin-top: 170px;
+        max-width: 1320px;
     }
     .div-textbox
     {
@@ -110,13 +111,13 @@ justify-content: center;
 {
     background-image:linear-gradient(to bottom, #413e8c7c, #706ef4) ;
     background-color: lightblue;
-    height: 643px;
+    height: 754px;
     text-align: center;
     justify-content: space-evenly;
 }
 #sla
 {
-    height: 720px;
+    height: 754px;
     align-items: center;
 }
 #sla>svg
@@ -149,13 +150,18 @@ justify-content: center;
     width: 300px;
     height: 180px;
     gap: 15px;
+    justify-content: center;
 }
 .ver-duvida {
     margin-top: 34px;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+    gap: 35px;
 }
 #sla
     {
-        margin-top: 120px;
+        margin-top: 100px;
     }
 #section1-phone>#sla>.ver-duvida>.vertodos
 {
@@ -191,6 +197,7 @@ justify-content: center;
     #sla
     {
         margin-top: 0px;
+        padding-left: 18px;
     }
     #section1-phone>#sla>.ver-duvida>.vertodos
     {
@@ -223,6 +230,7 @@ justify-content: center;
     #sla
     {
         margin-top: 100px;
+        padding-left: 18px;
     }
     #section1-phone>#sla>.ver-duvida>.vertodos
     {
@@ -236,6 +244,12 @@ justify-content: center;
         align-items: center;
     }
 
+}
+@media screen and (min-width:1200px) and (max-width:1366px) {
+    #sla
+    {
+        padding-left: 116px;
+    }
 }
 @media screen and (min-width:1200px)
 {
@@ -268,12 +282,7 @@ justify-content: center;
         color: white;
         font-size: 60px;
     }
-    #sla
-    {
-        height: 800px;
-        width: 800px;
-        margin-left: 100px;
-    }
+    
 
     #section1-phone>#sla>.ver-duvida>.vertodos
     {

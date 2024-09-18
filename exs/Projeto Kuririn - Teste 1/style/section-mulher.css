@@ -1,0 +1,302 @@
+#mulher
+{
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    text-align: center;
+}
+.container-mulher {
+    flex-flow: wrap;
+    display: flex;
+}
+#img-mulher
+{
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    padding-top: 30px;
+}
+#button-mulher
+{
+    display: flex;
+    width: 298px;
+    height: 48px;
+    justify-content: space-between;
+}
+#button-mulher-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
+}
+#atual
+{
+    background-color: #706ef4;
+    width: 103px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+#anos
+{
+    color: #706ef4;
+    border: 2px solid #706ef4;
+    background-color: #ffffff;
+    width: 180px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto-mulher
+{
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: start;
+    border-bottom: 4px solid #706EF4;
+    position: relative;
+}
+.texto-mulher::before
+{
+    content: url(../imagens/Group\ 1067.svg);
+    margin-right: 10px;
+}
+
+@media screen and (max-width:767px) 
+{
+    #mulher
+{
+    align-items: center;
+    height: 1000px;
+}
+.container-mulher {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    height: 1000px;
+}
+#img-mulher
+{
+    margin-top: 80px;
+    height: 300px;
+}
+.texto-mulher
+{
+    padding: 10px;
+}
+#button-mulher {
+    align-self: center;
+    margin-bottom: 32px;
+    margin-top: 42px;
+}
+.vertodos {
+    justify-content: start;
+    margin-top: 45px;
+}
+.titulo-mulher {
+    margin-top: 24px;
+}
+#anos
+{
+    width: 150px;
+}
+}
+@media screen and (min-width:768px) and (max-width:991px)
+{
+    #mulher
+{
+    height: 1150px;
+}
+.container-mulher
+{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 1150px;
+}
+#img-mulher
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 454px;
+    width: 454px;
+    background-image: url(../imagens/Group\ 1220.png);
+}
+.titulo-mulher
+{
+    height: 70px;
+    width: 545px;
+    margin-bottom: 73px;
+}
+.titulo-mulher>h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+.titulo-mulher>p
+{
+    font-size: 18px;
+    color: #858585;
+}
+#div-texto-mulher
+{
+    height: 130px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows:50px;
+    gap: 30px;
+}    
+#div-texto-mulher>div
+{
+    width: 200px;
+    height: 100px;
+}
+#button-mulher {
+    margin-bottom: 32px;
+    width: 325px;
+}
+.vertodos {
+    margin-top: 38px;
+}
+}
+@media screen and (min-width:992px) and (max-width:1199px)
+{
+    #mulher
+{
+    height: 750px;
+}
+.container-mulher
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 750px;
+}
+#img-mulher
+{
+    height: 324px;
+    width: 316px;
+    background-image: url(../imagens/Group\ 1221.png);
+}
+
+.titulo-mulher
+{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-mulher>h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+.titulo-mulher>p
+{
+    font-size: 18px;
+    color: #858585;
+}
+
+#div-texto-mulher
+{
+    height: 50px;
+    width: 300px;
+}    
+#div-texto-mulher>div
+{
+    width: 300px;
+    height: 100px;
+}
+
+
+#mulher-geral
+{
+    height: 330px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+#div-texto-mulher-2
+{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 370px;
+}
+}
+@media screen and (min-width:1200px)
+{
+    #mulher
+{
+    height: 900px;
+}
+.container-mulher
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 900px;
+}
+#img-mulher
+{
+    height: 450px;
+    width: 437px;
+    background-image: url(../imagens/Group\ 1221.png);
+}
+.titulo-mulher
+{
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titulo-mulher>h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+.titulo-mulher>p
+{
+    font-size: 18px;
+    color: #858585;
+}
+#div-texto-mulher
+{
+    height: 50px;
+    width: 300px;
+}    
+#div-texto-mulher>div
+{
+    width: 300px;
+    height: 100px;
+}
+#mulher-geral
+{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 98px;
+    flex-flow: column wrap;
+}
+
+#div-texto-mulher-2
+{
+    /* height: 270px; */
+    width: 400px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows:58px 58px 58px;
+    gap: 30px;
+}    
+#div-texto-mulher-2>div
+{
+    width: 200px;
+    height: 100px;
+}
+}

@@ -10,33 +10,56 @@
     align-items: center;
     
 }
-.row-refri {
+.container-refri {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: wrap;
 }
 #refri-texto
 {
-    width: 410px;
-    height:250px ;
+    height:160px ;
     color: #000000;
     font-size: 32px;
+    line-height: 40px;
+}
+#refri-texto>p {
+    margin-bottom: 0;
 }
 #refri-imagem
 {
-    width: 500px;;
+    width: 530px;;
     height:105px ;
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
+    animation: apear 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 10%;
+}
+@keyframes apear {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translate(30%,0);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translate(0,0);
+    }
+    
 }
 #coca
 {
-    height: 110px;
-    width: 190px;
+    height: 190px;
+    width: 253px;
     background-repeat: no-repeat;
     background-image: url(../imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.svg);
     background-size: contain;
+    background-position: center center;
 }
 #pepsi
 {
@@ -50,39 +73,38 @@
 {
 #refri-texto
 {
-    width: 300px;;
-    height:170px ;
-    display: flex;
-    text-align: center;
-    align-items: center;
+    /* width: 300px;; */
+    text-align: center ;
+    height:170px;
     font-size: 24px;
+    line-height: 34px;
 }
 
 #refri-imagem
 {
-    width: 350px;
+    width: 270px;
     height:62px ;
 }
 #coca
 {
-    height: 65px;
-    width: 110px;
+    height: 62px;
+    width: 104px;
     background-image: url(../imagens/sap-partner-logo-2A876A4A2A-seeklogo\ 1.png);
 }
 
 #pepsi
 {
-    height: 50px;
+    height: 46px;
     width: 135px;
 }
 #refri
 {
-    height: 407px;
+    align-items: end;
 }
-.row-refri
+.container-refri
     {
-        height: 400px;
         justify-content: center;
+        margin-bottom: 73px;
     }
 }
 @media screen and (min-width:768px) and (max-width:991px)
@@ -94,15 +116,38 @@
     display: flex;
     text-align: center;
     align-items: center;
-    flex-wrap: wrap;
+    margin-top: 54px;
 }
 #refri
 {
     height: 407px;
 }
-.row-refri
+.container-refri
     {
         height: 400px;
         justify-content: center;
+    }
+    #refri-imagem {
+        margin-bottom: 72px;
+        width: 500px;
+        justify-content: space-between;
+    }
+    #coca {
+        width: 199px;
+        height: 105px;
+    }
+    #pepsi {
+        width: 250px;
+        height: 96px;
+    }
+}
+@media (min-width:992px) and (max-width:1200px) {
+    #coca {
+        width: 200px;
+        height: 117px;
+    }
+    #pepsi {
+        width: 250px;
+        height: 92px;
     }
 }
